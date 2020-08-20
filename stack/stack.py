@@ -12,6 +12,10 @@ return elements in Last In First Out order.
 """
 
 
+from singly_linked_list import LinkedList
+import sys
+
+
 class Stack:
     def __init__(self):
         self.size = 0
@@ -27,4 +31,26 @@ class Stack:
         if len(self.storage) == 0:
             return None
         else:
-            return self.storage.pop(-1)
+            return self.storage.pop()
+
+
+# Implementing Stack using Linkedlist.
+sys.path.append('./singly_linked_list')
+
+
+class Slack:
+    def __init_(self):
+        self.size = 0
+        self.storage = LinkedList()
+
+    def len(self):
+        return self.size
+
+    def push(self, value):
+        return self.storage.add_to_head(value)
+
+    def pop(self):
+        if len(self.storage) == 0:
+            return None
+        else:
+            return self.storage.remove_tail()
