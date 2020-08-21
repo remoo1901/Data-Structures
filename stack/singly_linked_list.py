@@ -75,4 +75,7 @@ class LinkedList:
             if curr.get_value() is value:
                 return True
             curr = curr.get_next()
-        return False
+        return False   
+
+
+        ##
